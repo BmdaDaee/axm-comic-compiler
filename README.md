@@ -1,28 +1,16 @@
-# Comic Compiler (AxM Internal Tool)
+# React + Vite
 
-**Version:** v0  
-**Codename:** IssueForge (reserved)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Purpose
-Comic Compiler is an internal AxM tool used to compile comic issue materials
-(outlines, scripts, and visual breakdowns) into a single, exportable issue packet.
+Currently, two official plugins are available:
 
-## Scope
-- Single-user
-- Internal use only
-- No collaboration
-- No AI-assisted writing
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Canon
-Comic Compiler reads from the AxM Canon Vault.
-Canon rules are read-only and enforced during compilation.
+## React Compiler
 
-## Output
-- Issue outline
-- Script (pages/panels)
-- Visual breakdown notes
-- Canon warnings
-- Exportable issue packet
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Status
-Early development (v0).
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
