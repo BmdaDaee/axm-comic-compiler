@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnarchyXMayhem - FAQ</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%238B0000' d='M20,50 L35,20 L50,35 L65,15 L80,50 L65,70 L50,60 L35,80 Z'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/301ad926-ec8b-4f80-bae3-3057c864cd8e" alt="AnarchyXMayhem">
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="services.html#services">Services</a></li>
+                <li><a href="products.html#products">Products</a></li>
+                <li><a href="about.html#about">About</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="contact.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="faq">
+        <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+        <p class="section-subtitle">Quick answers to common questions</p>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question">
+                    What services does AnarchyXMayhem offer?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We offer comprehensive services including AI automation consulting, technology consulting, home automation setup, business consulting, e-commerce solutions, travel planning, and electronics sales (smart home products, phones, carriers, and refurbished/new electronics).</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    How do I schedule a consultation?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Simply fill out our booking form above with your preferred date and time. We'll confirm your appointment within 24 hours and send you a meeting link or location details.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What is your pricing structure?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Pricing varies based on the service and project scope. We offer free initial consultations to discuss your needs and provide accurate quotes. Request a quote above to get started.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    Do you offer ongoing support?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Yes! We provide ongoing support packages for all our services, including maintenance, troubleshooting, and optimization. Support options are tailored to your specific needs.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">
+                    What makes AnarchyXMayhem different?
+                    <span class="faq-icon">▼</span>
+                </button>
+                <div class="faq-answer">
+                    <p>We focus on practical solutions without the fluff. Our team combines deep technical expertise with real-world business experience to deliver results that actually work. From chaos to clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- include booking, quote, contact, newsletter, footer, chat and JS so original scripts have expected elements -->
+
+    <section id="booking">
+        <h2>Schedule a <span class="highlight">Consultation</span></h2>
+        <p class="section-subtitle">Book your consultation and let's solve your challenges</p>
+
+        <div class="form-container">
+            <form id="bookingForm">
+                <div class="form-group">
+                    <label for="bookingName">Full Name</label>
+                    <input type="text" id="bookingName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingEmail">Email</label>
+                    <input type="email" id="bookingEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingPhone">Phone</label>
+                    <input type="tel" id="bookingPhone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingService">Service Needed</label>
+                    <select id="bookingService" required>
+                        <option value="">Select a service...</option>
+                        <option value="ai-automation">AI & Automation Consulting</option>
+                        <option value="tech-consulting">Technology Consulting</option>
+                        <option value="business-consulting">Business Consulting</option>
+                        <option value="travel-services">Travel Services</option>
+                        <option value="home-automation">Home Automation</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingDate">Preferred Date</label>
+                    <input type="date" id="bookingDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingTime">Preferred Time</label>
+                    <input type="time" id="bookingTime" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bookingMessage">Brief Description of Your Needs</label>
+                    <textarea id="bookingMessage" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Book Consultation</button>
+                <div class="success-message" id="bookingSuccess">
+                    Thank you! Your consultation has been scheduled. We'll contact you shortly to confirm.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get in <span class="highlight">Touch</span></h2>
+        <p class="section-subtitle">Let's discuss how we can help you succeed</p>
+
+        <div class="form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Full Name</label>
+                    <input type="text" id="contactName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div class="success-message" id="contactSuccess">
+                    Thank you for reaching out! We'll get back to you within 24 hours.
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <h2>Stay <span class="highlight">Updated</span></h2>
+        <p class="section-subtitle">Subscribe to our newsletter for tips, deals, and insights</p>
+
+        <form class="newsletter-form" id="newsletterForm">
+            <input type="email" class="newsletter-input" placeholder="Enter your email" id="newsletterEmail" required>
+            <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+        <div class="success-message" id="newsletterSuccess" style="max-width: 500px; margin: 1rem auto;">
+            Successfully subscribed! Welcome to the AnarchyXMayhem community.
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/301ad926-ec8b-4f80-bae3-3057c864cd8e" alt="AnarchyXMayhem" style="height: 50px; width: auto; margin-bottom: 1rem; background-color: var(--pure-white); padding: 5px; border-radius: 4px;">
+                <p>Practical solutions for complex systems.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="services.html#services">AI & Automation</a></li>
+                    <li><a href="services.html#services">Technology Consulting</a></li>
+                    <li><a href="services.html#services">Business Consulting</a></li>
+                    <li><a href="services.html#services">Travel Services</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Products</h3>
+                <ul>
+                    <li><a href="products.html#products">Smart Home</a></li>
+                    <li><a href="products.html#products">Cell Phones & Carriers</a></li>
+                    <li><a href="products.html#products">Electronics</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="about.html#about">About Us</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="contact.html#contact">Contact</a></li>
+                    <li><a href="faq.html#faq">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 AnarchyXMayhem, LLC. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="chat-widget">
+        <button class="chat-button" id="chatButton">💬</button>
+        <div class="chat-window" id="chatWindow">
+            <div class="chat-header">
+                <h3>Chat with us</h3>
+                <button class="chat-close" id="chatClose">×</button>
+            </div>
+            <div class="chat-body" id="chatBody">
+                <div class="chat-message">
+                    <strong>AnarchyXMayhem:</strong> Hi! How can we help you today?
+                </div>
+            </div>
+            <div class="chat-input-container">
+                <input type="text" class="chat-input" id="chatInput" placeholder="Type your message...">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when link clicked
+        navLinks.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // FAQ Toggle
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('.faq-icon');
+
+                answer.classList.toggle('active');
+                icon.classList.toggle('active');
+            });
+        });
+
+        // Form Submissions
+        const bookingForm = document.getElementById('bookingForm');
+        const quoteForm = document.getElementById('quoteForm');
+        const contactForm = document.getElementById('contactForm');
+        const newsletterForm = document.getElementById('newsletterForm');
+
+        bookingForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const successMsg = document.getElementById('bookingSuccess');
+            successMsg.classList.add('active');
+            bookingForm.reset();
+            setTimeout(() => successMsg.classList.remove('active'), 5000);
+        });
+
+        quoteForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const successMsg = document.getElementById('quoteSuccess');
+            successMsg.classList.add('active');
+            quoteForm.reset();
+            setTimeout(() => successMsg.classList.remove('active'), 5000);
+        });
+
+        contactForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const successMsg = document.getElementById('contactSuccess');
+            successMsg.classList.add('active');
+            contactForm.reset();
+            setTimeout(() => successMsg.classList.remove('active'), 5000);
+        });
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const successMsg = document.getElementById('newsletterSuccess');
+            successMsg.classList.add('active');
+            newsletterForm.reset();
+            setTimeout(() => successMsg.classList.remove('active'), 5000);
+        });
+
+        // Chat Widget
+        const chatButton = document.getElementById('chatButton');
+        const chatWindow = document.getElementById('chatWindow');
+        const chatClose = document.getElementById('chatClose');
+        const chatInput = document.getElementById('chatInput');
+        const chatBody = document.getElementById('chatBody');
+
+        chatButton.addEventListener('click', () => {
+            chatWindow.classList.add('active');
+        });
+
+        chatClose.addEventListener('click', () => {
+            chatWindow.classList.remove('active');
+        });
+
+        chatInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter' && chatInput.value.trim()) {
+                const userMessage = document.createElement('div');
+                userMessage.className = 'chat-message';
+                userMessage.innerHTML = `<strong>You:</strong> ${chatInput.value}`;
+                chatBody.appendChild(userMessage);
+
+                // Simulate response
+                setTimeout(() => {
+                    const botMessage = document.createElement('div');
+                    botMessage.className = 'chat-message';
+                    botMessage.innerHTML = `<strong>AnarchyXMayhem:</strong> Thanks for your message! One of our team members will respond shortly. For immediate assistance, please call or use our contact form.`;
+                    chatBody.appendChild(botMessage);
+                    chatBody.scrollTop = chatBody.scrollHeight;
+                }, 1000);
+
+                chatInput.value = '';
+                chatBody.scrollTop = chatBody.scrollHeight;
+            }
+        });
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

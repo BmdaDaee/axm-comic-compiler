@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AnarchyXMayhem - Practical Solutions for Complex Systems</title>
+    <title>AnarchyXMayhem - Contact</title>
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath fill='%238B0000' d='M20,50 L35,20 L50,35 L65,15 L80,50 L65,70 L50,60 L35,80 Z'/%3E%3C/svg%3E">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation -->
     <nav>
         <div class="nav-container">
             <a href="index.html" class="logo">
@@ -26,121 +25,41 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="hero-content">
-            <h1>Anarchy<span class="hero-x">X</span>Mayhem</h1>
-            <p class="tagline-primary">Practical Solutions for Complex Systems</p>
-            <p class="tagline-secondary">We make technology, business, and logistics actually work.</p>
-            <a href="contact.html#contact" class="cta-button">Get Started</a>
-        </div>
-    </section>
-
-    <!-- The rest of the original sections are included so the site's JavaScript (which expects certain IDs/elements) remains functional across pages. Copy remains unchanged. -->
-
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our <span class="highlight">Services</span></h2>
-        <p class="section-subtitle">From chaos to clarity, without the fluff.</p>
-        
-        <div class="services-grid">
-            <div class="service-card">
-                <h3>AI & Automation Consulting</h3>
-                <ul>
-                    <li>AI Integration & Automation</li>
-                    <li>Custom AI Solutions</li>
-                    <li>Workflow Optimization</li>
-                    <li>Process Automation</li>
-                    <li>AI Agents & Chatbots</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <h3>Technology Consulting</h3>
-                <ul>
-                    <li>Software Development Consulting</li>
-                    <li>Home Automation Setup</li>
-                    <li>Self-Hosting & Server Setup</li>
-                    <li>Technology Stack Selection</li>
-                    <li>Digital Transformation</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <h3>Business Consulting</h3>
-                <ul>
-                    <li>Startup & Business Setup</li>
-                    <li>E-commerce Setup & Optimization</li>
-                    <li>Freelance/Gig Strategy</li>
-                    <li>Digital Product Strategy</li>
-                    <li>Business Process Improvement</li>
-                </ul>
-            </div>
-
-            <div class="service-card">
-                <h3>Travel Services</h3>
-                <ul>
-                    <li>Vacation Planning</li>
-                    <li>Flight & Hotel Bookings</li>
-                    <li>Travel Package Creation</li>
-                    <li>Group Travel Coordination</li>
-                    <li>Destination Consulting</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products">
-        <h2>Featured <span class="highlight">Products</span></h2>
-        <p class="section-subtitle">Quality electronics and smart solutions for modern life</p>
-
-        <div class="products-grid">
-            <div class="product-card">
-                <div class="product-icon">🏠</div>
-                <h3>Smart Home Products</h3>
-                <p>Smart bulbs, sensors, hubs, cameras, and automation devices</p>
-            </div>
-
-            <div class="product-card">
-                <div class="product-icon">📱</div>
-                <h3>Cell Phones & Carriers</h3>
-                <p>Latest smartphones and competitive carrier service plans</p>
-            </div>
-
-            <div class="product-card">
-                <div class="product-icon">💻</div>
-                <h3>Refurbished Electronics</h3>
-                <p>High-quality refurbished computers, laptops, and accessories</p>
-            </div>
-
-            <div class="product-card">
-                <div class="product-icon">🖥️</div>
-                <h3>New Electronics</h3>
-                <p>Latest tech gear, peripherals, and computing devices</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <h2>About <span class="highlight">AnarchyXMayhem</span></h2>
-        <p class="section-subtitle">Practical solutions for complex systems</p>
+    <section id="contact">
+        <h2>Get in <span class="highlight">Touch</span></h2>
+        <p class="section-subtitle">Let's discuss how we can help you succeed</p>
 
         <div class="form-container">
-            <p style="text-align: center; line-height: 1.8; color: var(--charcoal);">
-                At Anarchy<span style="color: var(--anarchy-red); font-weight: 700;">X</span>Mayhem, we specialize in making technology, business, and logistics actually work. 
-                Our team brings expertise in AI automation, software development, home automation, business consulting, and travel services.
-                <br><br>
-                We believe in practical solutions without the fluff—from chaos to clarity. Whether you're looking to automate your workflows, 
-                set up cutting-edge smart home systems, launch a new business, or plan the perfect vacation, we have the expertise to help you succeed.
-                <br><br>
-                <strong style="color: var(--purple-diamond);">Our Mission:</strong> Deliver intelligent, efficient solutions that solve real problems for real people.
-            </p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="contactName">Full Name</label>
+                    <input type="text" id="contactName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <input type="text" id="contactSubject" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+                <div class="success-message" id="contactSuccess">
+                    Thank you for reaching out! We'll get back to you within 24 hours.
+                </div>
+            </form>
         </div>
     </section>
 
-    <!-- Booking Section -->
+    <!-- Include booking, quote, newsletter, footer, chat, and JS as in original to keep behavior identical -->
     <section id="booking">
         <h2>Schedule a <span class="highlight">Consultation</span></h2>
         <p class="section-subtitle">Book your consultation and let's solve your challenges</p>
@@ -198,7 +117,6 @@
         </div>
     </section>
 
-    <!-- Quote Request Section -->
     <section id="quote">
         <h2>Request a <span class="highlight">Quote</span></h2>
         <p class="section-subtitle">Get a custom quote for your project</p>
@@ -259,161 +177,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <h2>Client <span class="highlight">Testimonials</span></h2>
-        <p class="section-subtitle">What our clients say about us</p>
-
-        <div class="testimonials-grid">
-            <div class="testimonial-card">
-                <p class="testimonial-text">"AnarchyXMayhem transformed our business with their AI automation solutions. We've cut manual work by 60% and increased efficiency dramatically."</p>
-                <p class="testimonial-author">— Sarah Johnson, Tech Startup Founder</p>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-text">"The home automation system they set up is incredible. Everything works seamlessly, and the team was professional throughout the entire process."</p>
-                <p class="testimonial-author">— Michael Chen, Homeowner</p>
-            </div>
-
-            <div class="testimonial-card">
-                <p class="testimonial-text">"Best travel planning experience I've ever had. They handled everything perfectly and found us deals we never would have found on our own."</p>
-                <p class="testimonial-author">— Emily Rodriguez, Frequent Traveler</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blog Section -->
-    <section id="blog">
-        <h2>Latest from Our <span class="highlight">Blog</span></h2>
-        <p class="section-subtitle">Insights, tips, and industry news</p>
-
-        <div class="blog-grid">
-            <div class="blog-card">
-                <div class="blog-image">🤖</div>
-                <div class="blog-content">
-                    <h3>5 Ways AI Can Transform Your Small Business</h3>
-                    <p class="blog-date">February 1, 2026</p>
-                    <p class="blog-excerpt">Discover practical AI applications that can automate tasks, improve customer service, and boost your bottom line.</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image">🏠</div>
-                <div class="blog-content">
-                    <h3>Home Automation 101: Getting Started</h3>
-                    <p class="blog-date">January 28, 2026</p>
-                    <p class="blog-excerpt">A beginner's guide to smart home technology, from choosing devices to setting up your first automation.</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </div>
-
-            <div class="blog-card">
-                <div class="blog-image">✈️</div>
-                <div class="blog-content">
-                    <h3>Travel Hacks: How to Save on Your Next Trip</h3>
-                    <p class="blog-date">January 25, 2026</p>
-                    <p class="blog-excerpt">Expert tips on finding the best deals, maximizing rewards, and planning memorable vacations on a budget.</p>
-                    <a href="#" class="read-more">Read More →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section id="faq">
-        <h2>Frequently Asked <span class="highlight">Questions</span></h2>
-        <p class="section-subtitle">Quick answers to common questions</p>
-
-        <div class="faq-container">
-            <div class="faq-item">
-                <button class="faq-question">
-                    What services does AnarchyXMayhem offer?
-                    <span class="faq-icon">▼</span>
-                </button>
-                <div class="faq-answer">
-                    <p>We offer comprehensive services including AI automation consulting, technology consulting, home automation setup, business consulting, e-commerce solutions, travel planning, and electronics sales (smart home products, phones, carriers, and refurbished/new electronics).</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    How do I schedule a consultation?
-                    <span class="faq-icon">▼</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Simply fill out our booking form above with your preferred date and time. We'll confirm your appointment within 24 hours and send you a meeting link or location details.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    What is your pricing structure?
-                    <span class="faq-icon">▼</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Pricing varies based on the service and project scope. We offer free initial consultations to discuss your needs and provide accurate quotes. Request a quote above to get started.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    Do you offer ongoing support?
-                    <span class="faq-icon">▼</span>
-                </button>
-                <div class="faq-answer">
-                    <p>Yes! We provide ongoing support packages for all our services, including maintenance, troubleshooting, and optimization. Support options are tailored to your specific needs.</p>
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <button class="faq-question">
-                    What makes AnarchyXMayhem different?
-                    <span class="faq-icon">▼</span>
-                </button>
-                <div class="faq-answer">
-                    <p>We focus on practical solutions without the fluff. Our team combines deep technical expertise with real-world business experience to deliver results that actually work. From chaos to clarity.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Get in <span class="highlight">Touch</span></h2>
-        <p class="section-subtitle">Let's discuss how we can help you succeed</p>
-
-        <div class="form-container">
-            <form id="contactForm">
-                <div class="form-group">
-                    <label for="contactName">Full Name</label>
-                    <input type="text" id="contactName" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="contactEmail">Email</label>
-                    <input type="email" id="contactEmail" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="contactSubject">Subject</label>
-                    <input type="text" id="contactSubject" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="contactMessage">Message</label>
-                    <textarea id="contactMessage" required></textarea>
-                </div>
-
-                <button type="submit" class="submit-btn">Send Message</button>
-                <div class="success-message" id="contactSuccess">
-                    Thank you for reaching out! We'll get back to you within 24 hours.
-                </div>
-            </form>
-        </div>
-    </section>
-
-    <!-- Newsletter Section -->
     <section id="newsletter">
         <h2>Stay <span class="highlight">Updated</span></h2>
         <p class="section-subtitle">Subscribe to our newsletter for tips, deals, and insights</p>
@@ -427,11 +190,10 @@
         </div>
     </section>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
-                <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/301ad926-ec8b-4f80-bae3-3057c864cd8e" alt="AnarchyXMayhem" style="height: 50px; width: auto; margin-bottom: 1rem; /* Temporary white background - remove once transparent logo provided */ background-color: var(--pure-white); padding: 5px; border-radius: 4px;">
+                <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/301ad926-ec8b-4f80-bae3-3057c864cd8e" alt="AnarchyXMayhem" style="height: 50px; width: auto; margin-bottom: 1rem; background-color: var(--pure-white); padding: 5px; border-radius: 4px;">
                 <p>Practical solutions for complex systems.</p>
             </div>
 
@@ -470,7 +232,6 @@
         </div>
     </footer>
 
-    <!-- Chat Widget -->
     <div class="chat-widget">
         <button class="chat-button" id="chatButton">💬</button>
         <div class="chat-window" id="chatWindow">
@@ -607,17 +368,4 @@
         });
     </script>
 </body>
-</html>
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>axm-comic-compiler</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
 </html>
